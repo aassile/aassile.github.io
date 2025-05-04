@@ -39,5 +39,5 @@ Each folder will contain a detailed README explaining:
 * Conclusions and next steps
 
 #### Contact
-📫 aassile93@gmail.com
+📫 aassile.data@gmail.com
 🔗 https://www.linkedin.com/in/andrew-assile/
