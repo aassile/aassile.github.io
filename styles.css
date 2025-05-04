@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #dbd9f0e1;
     text-decoration: none;
 }
 
@@ -64,7 +64,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
     background: #333;
-    color: #fff;
+    color: #dbd9f0e1;
     position: relative;
     bottom: 0;
     width: 100%;
