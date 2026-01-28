@@ -19,7 +19,7 @@ Each project has its own folder and includes:
 
 #### Projects
 
-Projects Coming soon!
+[Dental Insurance Pricing](https://github.com/aassile/Dental-Insurance-Pricing)
 
 #### Tools & Technologies Used
 
@@ -40,4 +40,5 @@ Each folder will contain a detailed README explaining:
 
 #### Contact
 📫 aassile.data@gmail.com
+🔗 https://github.com/aassile
 🔗 https://www.linkedin.com/in/andrew-assile/
