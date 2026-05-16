@@ -1,147 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Andrew Assile is a data scientist focused on predictive modeling, explainable machine learning, and production analytics in Python and SQL." />
+  <title>Andrew Assile | Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Hi, I'm Andrew, and welcome to my portfolio page!</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Data Science Projects</a></li>
-                <li><a href="#non-data_projects">Non-Data Projects</a></li>
-                <li><a href="#favorite_resources">Favorite Resources</a></li>
-                <li><a href="#favorite_books">Favorite Books</a></li>
-                <li><a href="#contact">Contact</a></li>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">Andrew Assile</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Data Scientist</p>
+          <h1>Interpretable models, reproducible analytics, and practical decision-support tools.</h1>
+          <p class="hero-text">
+            I am a data scientist with an MS in Data Science and a background in mathematics, focused on predictive modeling,
+            workflow automation, and explainable machine learning using Python and SQL.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/aassile" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/andrew-assile/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="button button-ghost" href="mailto:aassile.data@gmail.com">Email</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Quick profile summary">
+          <h2>At a glance</h2>
+          <ul>
+            <li>MS Data Science, Eastern University, 2024</li>
+            <li>BS Mathematics, Ramapo College of New Jersey, 2021</li>
+            <li>Python, SQL, XGBoost, GLMs, SHAP</li>
+            <li>Analytics consultant building production workflows and dashboards</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow">
+        <p class="section-label">About</p>
+        <h2>Focused on work that holds up under scrutiny.</h2>
+        <p>
+          My background combines mathematics, applied modeling, and hands-on analytics work. I build pipelines and models that
+          are meant to be used, not just demonstrated.
+        </p>
+        <p>
+          Technically, I work most often with Python, SQL, XGBoost, GLMs, SHAP, and business intelligence tools. I care about
+          interpretability, sound evaluation, and making analytical outputs clear enough for real stakeholders to trust.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-label">Selected Projects</p>
+        <h2>Two strong projects beat a long weak list.</h2>
+        <div class="project-grid">
+          <article class="card project-card">
+            <div class="card-top">
+              <p class="card-kicker">Featured Project</p>
+              <h3>Dental Claim Cost Pricing with Explainable XGBoost</h3>
+            </div>
+            <p>
+              End-to-end regression pipeline for predicting expected claim cost per member using engineered behavioral,
+              demographic, and geographic features.
+            </p>
+            <ul class="feature-list">
+              <li>XGBoost model with holdout RMSE of 187 and R of 0.89</li>
+              <li>SHAP-based global and local interpretability</li>
+              <li>Optuna tuning and Streamlit deployment</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="head_shot.jpg" alt="Andrew Assile" width="200"><p>Hi, I’m Andrew, and I'm a data scientist. I have a strong foundation in mathematics, statistics, and computer science, with a
-                focus on data analysis, machine learning, and data visualization. I hold a Master’s degree in Data Science from Eastern University and a Bachelor’s degree in
-                mathematics with a minor in computer science from Ramapo College of NJ. My academic background has equipped me with the skills to tackle complex data challenges
-                and derive actionable insights from large datasets.</p>
+            <a class="text-link" href="https://github.com/aassile/Dental-Insurance-Pricing" target="_blank" rel="noopener noreferrer">View project</a>
+          </article>
 
-            <p>While my educational background is extensive, I found there to be a few gaps that needed to be filled. My portfolio, along with my other projects,
-                showcases how I have worked to bridge these gaps through continuous learning and practical application of data science techniques.</p>
-
-            <p>My journey in data science began with a fascination for uncovering patterns and trends within data. I have experience
-                in various programming languages, including Python, R, and SQL, and I am proficient in using data analysis libraries such as Pandas, NumPy, and Scikit-learn.
-                I have also worked with data visualization tools like Tableau and Matplotlib to create compelling visual narratives that communicate
-                insights effectively. My passion for data extends beyond technical skills; I am also deeply interested in the ethical implications of data science and the
-                importance of responsible data usage. I believe that data should be used to empower individuals and communities, and I strive to apply my skills in a way
-                that promotes positive social impact.</p>
-                
-            <p>I currently work in provider network analytics within the insurance industry, where I apply data-driven approaches to
-                optimize healthcare systems and decision-making by analyzing provider performance, identifying business cost-saving opportunities,
-                and improving patient experience through data-driven insights.</p>
-
-            <p>I’m perpetually curious and passionate about learning new things, always seeking opportunities to push the boundaries
-                of what’s possible with data. My goal is to innovate and contribute meaningful advancements to the field of data
-                science through research, exploration, and creative problem-solving. This portfolio highlights my ongoing
-                journey—combining technical expertise with a commitment to lifelong learning and impactful discovery.</p>
-
-            <p>As I continue my journey in data science, I am excited to explore new challenges and opportunities that allow me to apply my skills
-                and knowledge in meaningful ways. I am eager to collaborate with like-minded individuals and organizations that share my passion for data-driven solutions.
-                Thank you for visiting my portfolio, and I look forward to connecting with you!</p>
-
-            <p>Feel free to reach out if you have any questions or would like to discuss potential collaborations. I am always open to new opportunities and
-                connections in the data science community. Let's connect and explore how we can work together to make a positive impact through data!</p>
-            
-            <p>Best regards, Andrew Assile</p>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <p>Master of Science in Data Science, Eastern University, 2024</p>
-            <p>Bachelor of Science in Mathematics with a Minor in Computer Science, Ramapo College of NJ, 2021</p>
-
-        <section id="experience">
-            <h2>Experience</h2>
-                
-        </section>
-
-        <section id="certifications">
-            <h2>Certifications</h2>
-            
-        </section>
-        
-        <section id="skills">
-            <h2>Skills</h2>
-            <p>My skills are constantly evolving as I learn new techniques and tools. I am always eager to expand my
-                knowledge and stay up-to-date with the latest advancements in the field.</p>
-            <p>Here are the tools I use:</p>
-            <ul>
-                <li>Jupyter Notebook</li>
-                <li>Python</li>
-                <li>R</li>
-                <li>SQL</li>
-                <li>Machine Learning</li>
-                <li>Data Visualization</li>
-                <li>Statistics</li>
-                <li>Data Analysis</li>
-                <li>Tableau</li>
+          <article class="card project-card">
+            <div class="card-top">
+              <p class="card-kicker">Modeling Project</p>
+              <h3>GLM Pricing for French Motor Third-Party Liability</h3>
+            </div>
+            <p>
+              Classical actuarial-style pricing workflow using separate frequency and severity models to estimate pure premium
+              on the freMTPL2 dataset.
+            </p>
+            <ul class="feature-list">
+              <li>Poisson GLM for frequency and Gamma GLM for severity</li>
+              <li>Reusable project structure with reproducible notebooks</li>
+              <li>Diagnostics and feature preparation across 678K policies</li>
             </ul>
-        </section>
+            <a class="text-link" href="https://github.com/aassile/GLM-Pricing-French-MTPL" target="_blank" rel="noopener noreferrer">View project</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <section id="projects">
-            <h2>Data Science Projects</h2>
-            <ul>
-                <li><a href="https://github.com/aassile/Dental-Insurance-Pricing">Dental Insurance Pricing</a></li>
-            </ul>
-        </section>
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="section-label">Experience</p>
+        <h2>Production analytics, not just notebooks.</h2>
+        <div class="experience-grid">
+          <article class="card">
+            <h3>MetLife</h3>
+            <p class="role">Analytics Consultant / Data Specialist, Dental Network Analytics</p>
+            <p>
+              Build Python and SQL workflows for ingestion, cleaning, and reporting; maintain dashboards; and transform raw
+              claims and demographic data into structured inputs for pricing and actuarial review.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Earlier analytics roles</h3>
+            <p class="role">Underwriting and risk analysis</p>
+            <p>
+              Automated data preparation, supported pricing decisions, and worked across claims, demographic, and plan-level data
+              in business-facing analytical roles.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <section id="non-data_projects">
-            <h2>Non-Data Projects</h2>
-            <p>Projects coming soon!</p>
-        </section>
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section-label">Skills</p>
+        <h2>Tools I actually use.</h2>
+        <div class="skills-block">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>R</span>
+          <span>pandas</span>
+          <span>NumPy</span>
+          <span>scikit-learn</span>
+          <span>XGBoost</span>
+          <span>statsmodels</span>
+          <span>SHAP</span>
+          <span>Optuna</span>
+          <span>Power BI</span>
+          <span>Tableau</span>
+          <span>Qlik Sense</span>
+          <span>Machine Learning</span>
+          <span>Feature Engineering</span>
+          <span>Model Validation</span>
+        </div>
+      </div>
+    </section>
 
-        <section id="favorite_resources">
-            <h2>Favorite Resources</h2>
-            <p>Here are some of my favorite online resources:</p>
-            <ul>
-                <li><a href="https://www.coursera.org/">Coursera</a></li>
-                <li><a href="https://www.kaggle.com/">Kaggle</a></li>
-                <li><a href="https://towardsdatascience.com/">Towards Data Science</a></li>
-                <li><a href="https://www.datacamp.com/">DataCamp</a></li>
-                <li><a href="https://www.udacity.com/">Udacity</a></li>
-            </ul>
-        </section>
+    <section class="section contact-section" id="contact">
+      <div class="container narrow">
+        <p class="section-label">Contact</p>
+        <h2>Get in touch.</h2>
+        <p>
+          If you want to discuss data science roles, projects, or collaboration, reach me here.
+        </p>
+        <ul class="contact-list">
+          <li><a href="mailto:aassile.data@gmail.com">aassile.data@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/andrew-assile/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/aassile" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-        <section id="favorite_books">
-            <h2>Favorite Books</h2>
-            <p>Here are some of my favorite books:</p>
-            <ul>
-                <li><a href="https://a.co/d/78soUJ0"><em>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow</em> by Aurélien Géron</li>
-                <li><a href="https://a.co/d/9WjARIQ"><em>Applied Predictive Modeling</em> by Max Kuhn and Kjell Johnson</li>
-                <li><a href="https://a.co/d/dRfGBoa"><em>Feature Engineering and Selection</em> by Max Kuhn and Kjell Johnson</li>
-                <li><a href="https://a.co/d/0Rvd07i"><em>Hands-On Large Language Models: Language Understanding and Generation</em> by Jay Alammar and Maarten Grootendorst</li>
-                <li><a href="https://a.co/d/1BnJi9i"><em>Natural Language Processing with Transformers, Revised Edition</em> by Lewis Tunstall, Leandro von Werra, and Thomas Wolf</li>
-                
-            </ul>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <a href="mailto:aassile.data@gmail.com">📫 aassile.data@gmail.com</a>
-            <br />
-            <a href="https://www.linkedin.com/in/andrew-assile/">🔗 https://www.linkedin.com/in/andrew-assile/</a>
-            <br />
-            <a href="https://github.com/aassile">🔗 https://github.com/aassile</a>
-        </section>
-
-    </main>
-    <footer>
-        <p>&copy; 2026 Andrew Assile </p>
-    </footer>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Andrew Assile</p>
+      <p>Data Scientist</p>
+    </div>
+  </footer>
 </body>
 </html>
