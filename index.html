@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Andrew Assile is a data scientist focused on predictive modeling, explainable machine learning, and production analytics in Python and SQL." />
+  <meta name="description" content="Andrew Assile — data scientist building interpretable models and production analytics workflows in Python and SQL." />
   <title>Andrew Assile | Data Scientist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,8 +15,8 @@
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#top">Andrew Assile</a>
-      <nav aria-label="Primary navigation">
+      <span class="brand">Andrew Assile</span>
+      <nav aria-label="Primary">
         <ul class="nav-list">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -28,160 +28,185 @@
   </header>
 
   <main id="main">
+
+    <!-- HERO -->
     <section class="hero" id="top">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Data Scientist</p>
-          <h1>Interpretable models, reproducible analytics, and practical decision-support tools.</h1>
-          <p class="hero-text">
-            I am a data scientist with an MS in Data Science and a background in mathematics, focused on predictive modeling,
-            workflow automation, and explainable machine learning using Python and SQL.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://github.com/aassile" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a class="button button-secondary" href="https://www.linkedin.com/in/andrew-assile/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a class="button button-ghost" href="mailto:aassile.data@gmail.com">Email</a>
+      <div class="container">
+        <div class="hero-layout">
+          <div class="hero-left">
+            <h1>Data Scientist</h1>
+            <p class="hero-sub">
+              Predictive modeling, explainable ML, and production analytics in Python and SQL.
+              MS Data Science (GPA 3.83) &mdash; Eastern University, 2024.
+              BS Mathematics (GPA 3.54) &mdash; Ramapo College, 2021.
+            </p>
+            <div class="hero-links">
+              <a class="btn-primary" href="https://github.com/aassile" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn-outline" href="https://www.linkedin.com/in/andrew-assile/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn-ghost" href="mailto:aassile.data@gmail.com">Email</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="stack-list">
+              <div class="stack-row"><span class="stack-label">Languages</span><span class="stack-val">Python &middot; SQL &middot; R</span></div>
+              <div class="stack-row"><span class="stack-label">Modeling</span><span class="stack-val">XGBoost &middot; GLMs &middot; scikit-learn &middot; statsmodels</span></div>
+              <div class="stack-row"><span class="stack-label">Explainability</span><span class="stack-val">SHAP &middot; Optuna</span></div>
+              <div class="stack-row"><span class="stack-label">BI / Reporting</span><span class="stack-val">Power BI &middot; Tableau &middot; Qlik Sense</span></div>
+              <div class="stack-row"><span class="stack-label">Infra</span><span class="stack-val">pandas &middot; NumPy &middot; Git &middot; AWS S3/EC2</span></div>
+            </div>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Quick profile summary">
-          <h2>At a glance</h2>
-          <ul>
-            <li>MS Data Science, Eastern University, 2024</li>
-            <li>BS Mathematics, Ramapo College of New Jersey, 2021</li>
-            <li>Python, SQL, XGBoost, GLMs, SHAP</li>
-            <li>Analytics consultant building production workflows and dashboards</li>
-          </ul>
-        </aside>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="section" id="about">
-      <div class="container narrow">
-        <p class="section-label">About</p>
-        <h2>Focused on work that holds up under scrutiny.</h2>
-        <p>
-          My background combines mathematics, applied modeling, and hands-on analytics work. I build pipelines and models that
-          are meant to be used, not just demonstrated.
-        </p>
-        <p>
-          Technically, I work most often with Python, SQL, XGBoost, GLMs, SHAP, and business intelligence tools. I care about
-          interpretability, sound evaluation, and making analytical outputs clear enough for real stakeholders to trust.
-        </p>
+      <div class="container section-layout">
+        <h2 class="section-title">About</h2>
+        <div class="section-body">
+          <p>
+            I am a working data scientist with a strong applied mathematics background.
+            My focus is building models and workflows that produce reliable, interpretable outputs
+            in production settings — not just in notebooks.
+          </p>
+          <p>
+            I care about evaluation rigor, reproducibility, and making results legible to stakeholders who need to act on them.
+            I work primarily in Python and SQL, with hands-on experience shipping analytics pipelines,
+            dashboards, and predictive models into real business processes.
+          </p>
+        </div>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section class="section" id="projects">
-      <div class="container">
-        <p class="section-label">Selected Projects</p>
-        <h2>Two strong projects beat a long weak list.</h2>
-        <div class="project-grid">
-          <article class="card project-card">
-            <div class="card-top">
-              <p class="card-kicker">Featured Project</p>
-              <h3>Dental Claim Cost Pricing with Explainable XGBoost</h3>
-            </div>
-            <p>
-              End-to-end regression pipeline for predicting expected claim cost per member using engineered behavioral,
-              demographic, and geographic features.
-            </p>
-            <ul class="feature-list">
-              <li>XGBoost model with holdout RMSE of 187 and R of 0.89</li>
-              <li>SHAP-based global and local interpretability</li>
-              <li>Optuna tuning and Streamlit deployment</li>
-            </ul>
-            <a class="text-link" href="https://github.com/aassile/Dental-Insurance-Pricing" target="_blank" rel="noopener noreferrer">View project</a>
-          </article>
+      <div class="container section-layout">
+        <h2 class="section-title">Projects</h2>
+        <div class="section-body">
+          <div class="project-list">
 
-          <article class="card project-card">
-            <div class="card-top">
-              <p class="card-kicker">Modeling Project</p>
-              <h3>GLM Pricing for French Motor Third-Party Liability</h3>
-            </div>
-            <p>
-              Classical actuarial-style pricing workflow using separate frequency and severity models to estimate pure premium
-              on the freMTPL2 dataset.
-            </p>
-            <ul class="feature-list">
-              <li>Poisson GLM for frequency and Gamma GLM for severity</li>
-              <li>Reusable project structure with reproducible notebooks</li>
-              <li>Diagnostics and feature preparation across 678K policies</li>
-            </ul>
-            <a class="text-link" href="https://github.com/aassile/GLM-Pricing-French-MTPL" target="_blank" rel="noopener noreferrer">View project</a>
-          </article>
+            <article class="project-item">
+              <div class="project-meta">
+                <h3>Dental Claim Cost Pricing with Explainable XGBoost</h3>
+                <div class="tag-row">
+                  <span class="tag">Python</span>
+                  <span class="tag">XGBoost</span>
+                  <span class="tag">SHAP</span>
+                  <span class="tag">Optuna</span>
+                  <span class="tag">Streamlit</span>
+                </div>
+              </div>
+              <div class="project-detail">
+                <p>
+                  End-to-end regression model predicting expected claim cost per member.
+                  Engineered features across age/sex bands, procedure code vectors, provider risk scoring,
+                  geographic cost indices, and prior-period utilization.
+                  Holdout RMSE 187 and R&sup2; 0.89.
+                  SHAP provides both global feature importance and local per-quote explanation.
+                  Deployed as a live interactive Streamlit app.
+                </p>
+                <a class="text-link" href="https://github.com/aassile/Dental-Insurance-Pricing" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+              </div>
+            </article>
+
+            <article class="project-item">
+              <div class="project-meta">
+                <h3>GLM Pricing &mdash; French Motor Third-Party Liability</h3>
+                <div class="tag-row">
+                  <span class="tag">Python</span>
+                  <span class="tag">statsmodels</span>
+                  <span class="tag">GLM</span>
+                  <span class="tag">Poisson</span>
+                  <span class="tag">Gamma</span>
+                </div>
+              </div>
+              <div class="project-detail">
+                <p>
+                  Actuarial-style ratemaking pipeline on the freMTPL2 dataset (678K policies, 26K claims).
+                  Poisson GLM for claim frequency, Gamma GLM for claim severity, combined into pure premium estimates.
+                  Full EDA, feature preparation, and model diagnostics.
+                  Structured into reusable <code>src/</code> modules with reproducible notebooks.
+                </p>
+                <a class="text-link" href="https://github.com/aassile/GLM-Pricing-French-MTPL" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+              </div>
+            </article>
+
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section class="section" id="experience">
-      <div class="container">
-        <p class="section-label">Experience</p>
-        <h2>Production analytics, not just notebooks.</h2>
-        <div class="experience-grid">
-          <article class="card">
-            <h3>MetLife</h3>
-            <p class="role">Analytics Consultant / Data Specialist, Dental Network Analytics</p>
-            <p>
-              Build Python and SQL workflows for ingestion, cleaning, and reporting; maintain dashboards; and transform raw
-              claims and demographic data into structured inputs for pricing and actuarial review.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Earlier analytics roles</h3>
-            <p class="role">Underwriting and risk analysis</p>
-            <p>
-              Automated data preparation, supported pricing decisions, and worked across claims, demographic, and plan-level data
-              in business-facing analytical roles.
-            </p>
-          </article>
+      <div class="container section-layout">
+        <h2 class="section-title">Experience</h2>
+        <div class="section-body">
+          <div class="exp-list">
+
+            <article class="exp-item">
+              <div class="exp-header">
+                <span class="exp-company">MetLife</span>
+                <span class="exp-dates">Jun 2024 &ndash; Present</span>
+              </div>
+              <p class="exp-role">Analytics Consultant / Data Specialist, Dental Network Analytics &mdash; Bridgewater, NJ</p>
+              <ul class="exp-bullets">
+                <li>Build Python and SQL pipelines to automate data ingestion, cleaning, and prep from claims and market sources &mdash; reduced manual reporting time by ~50%.</li>
+                <li>Maintain Power BI, Tableau, and Qlik Sense dashboards surfacing network trends and pricing insights for business stakeholders.</li>
+                <li>Transform raw claims and demographic data into structured inputs for pricing and actuarial review.</li>
+                <li>Replace manual Excel workflows with reusable Python/SQL automation.</li>
+              </ul>
+            </article>
+
+            <article class="exp-item">
+              <div class="exp-header">
+                <span class="exp-company">MetLife</span>
+                <span class="exp-dates">Oct 2022 &ndash; Jun 2024</span>
+              </div>
+              <p class="exp-role">Underwriter II, National Accounts</p>
+              <ul class="exp-bullets">
+                <li>Analyzed claims, demographic, and plan data to price large group benefits accounts.</li>
+                <li>Automated rate calculation and data prep in SQL and Python, supporting ~100 seasonal renewals.</li>
+                <li>Collaborated with sales and actuarial teams on RFP strategy and alternative plan pricing.</li>
+              </ul>
+            </article>
+
+            <article class="exp-item">
+              <div class="exp-header">
+                <span class="exp-company">Aetna / CVS Health</span>
+                <span class="exp-dates">Jul 2021 &ndash; Oct 2022</span>
+              </div>
+              <p class="exp-role">Underwriting Analyst Associate &mdash; Remote</p>
+              <ul class="exp-bullets">
+                <li>Risk and pricing analysis on group insurance policies using statistical methods and data tools.</li>
+                <li>Built SQL and pandas scripts to streamline quote processing, reducing cycle time by 1&ndash;2 days.</li>
+              </ul>
+            </article>
+
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="skills">
-      <div class="container">
-        <p class="section-label">Skills</p>
-        <h2>Tools I actually use.</h2>
-        <div class="skills-block">
-          <span>Python</span>
-          <span>SQL</span>
-          <span>R</span>
-          <span>pandas</span>
-          <span>NumPy</span>
-          <span>scikit-learn</span>
-          <span>XGBoost</span>
-          <span>statsmodels</span>
-          <span>SHAP</span>
-          <span>Optuna</span>
-          <span>Power BI</span>
-          <span>Tableau</span>
-          <span>Qlik Sense</span>
-          <span>Machine Learning</span>
-          <span>Feature Engineering</span>
-          <span>Model Validation</span>
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container section-layout">
+        <h2 class="section-title">Contact</h2>
+        <div class="section-body">
+          <p>Open to data science roles, research collaborations, and interesting problems.</p>
+          <ul class="contact-list">
+            <li><a href="mailto:aassile.data@gmail.com">aassile.data@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/andrew-assile/" target="_blank" rel="noopener noreferrer">linkedin.com/in/andrew-assile</a></li>
+            <li><a href="https://github.com/aassile" target="_blank" rel="noopener noreferrer">github.com/aassile</a></li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="container narrow">
-        <p class="section-label">Contact</p>
-        <h2>Get in touch.</h2>
-        <p>
-          If you want to discuss data science roles, projects, or collaboration, reach me here.
-        </p>
-        <ul class="contact-list">
-          <li><a href="mailto:aassile.data@gmail.com">aassile.data@gmail.com</a></li>
-          <li><a href="https://www.linkedin.com/in/andrew-assile/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="https://github.com/aassile" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        </ul>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>Andrew Assile</p>
-      <p>Data Scientist</p>
+    <div class="container footer-inner">
+      <span>Andrew Assile &copy; 2026</span>
     </div>
   </footer>
 </body>
