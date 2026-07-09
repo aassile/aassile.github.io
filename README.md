@@ -49,8 +49,9 @@ End-to-end binary classification pipeline on the UCI Sonar dataset, distinguishi
 - Tuned Extra Trees best: 92.9% test accuracy, 0.982 ROC-AUC
 - Permutation-importance interpretability, K-Means clustering, and synthetic stress-testing
 - Packaged into importable `src/` modules with a reproducible notebook, pytest suite, and CI
+- Live interactive Streamlit app for signal classification and per-band explanations
 
-[View repo](https://github.com/aassile/Sonar_Mine_Detection)
+[Live app](https://sonar-mine-detection-andrew-assile.streamlit.app/) · [View repo](https://github.com/aassile/Sonar_Mine_Detection)
 
 ---
 
