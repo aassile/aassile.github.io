@@ -38,6 +38,22 @@ Actuarial-style ratemaking pipeline using frequency and severity models on the f
 
 ---
 
+### Sonar Mine Detection — Mines vs. Rocks Classification
+
+End-to-end binary classification pipeline on the UCI Sonar dataset, distinguishing underwater mines from rocks using 60 acoustic frequency-band energy readings.
+
+**Stack:** Python, scikit-learn, Extra Trees, Plotly, pytest
+
+**Key results:**
+- Compared Random Forest, Extra Trees, Gradient Boosting, and a neural net
+- Tuned Extra Trees best: 92.9% test accuracy, 0.982 ROC-AUC
+- Permutation-importance interpretability, K-Means clustering, and synthetic stress-testing
+- Packaged into importable `src/` modules with a reproducible notebook, pytest suite, and CI
+
+[View repo](https://github.com/aassile/Sonar_Mine_Detection)
+
+---
+
 ## Technical Skills
 
 | Category | Tools |
@@ -55,7 +71,7 @@ Actuarial-style ratemaking pipeline using frequency and severity models on the f
 **MS Data Science** — Eastern University, 2024 (GPA 3.83)
 **BS Mathematics** — Ramapo College of New Jersey, 2021 (GPA 3.54, Pi Mu Epsilon)
 
-Currently: Analytics Consultant at MetLife, building Python and SQL workflows for dental network analytics, claims data pipelines, and BI dashboards.
+Currently: Senior Financial Consultant, Dental Network Analytics at MetLife, building Python and SQL workflows for claims data pipelines, pricing inputs, and Power BI dashboards.
 
 ---
 
